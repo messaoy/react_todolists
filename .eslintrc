@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/prop-types": 0,
+    "no-underscore-dangle": 0,
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error",
+    "react/prefer-stateless-function": 0,
+    "linebreak-style": 0
+  }
+}

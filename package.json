@@ -1,0 +1,55 @@
+{
+  "name": "todo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bulma": "^0.8.0",
+    "concurrently": "^5.0.1",
+    "eslint": "^6.6.0",
+    "eslint-plugin-jest": "^23.0.3",
+    "express": "^4.17.1",
+    "json-server": "^0.15.1",
+    "node-sass": "^4.13.0",
+    "query-string": "^6.8.3",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "sass-loader": "^8.0.0"
+  },
+  "scripts": {
+    "server": "json-server -p 4000 --watch db.json",
+    "front": "react-scripts start",
+    "start": "concurrently \"npm run server\" \"npm run front",
+    "test": "react-scripts test --watchAll",
+    "lint": "eslint ./src/components/**"
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
+    "eslint-config-airbnb": "^18.0.1",
+    "jest-localstorage-mock": "^2.4.0",
+    "eslint-plugin-react": "^7.17.0",
+    "react-hot-loader": "^4.12.15",
+    "react-test-renderer": "^16.12.0"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

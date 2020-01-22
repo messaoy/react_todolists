@@ -1,0 +1,9 @@
+.root {
+    display: flow-root;
+}
+
+.marginTop {
+    margin-top: 20px;
+}
+
+[id^="add"], [id^="delete"] { padding: 5px; }
